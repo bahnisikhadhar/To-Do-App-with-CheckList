@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  background: linear-gradient(rgb(122, 226, 221),seagreen) no-repeat center/cover;
+  height: 100vh;
+}
+
+.Container {
+  max-width: 80rem;
+  margin: 5rem auto;
+  border: 1px solid black;
+}
+.Section {
+  width: 90%;
+ margin: 1rem; 
+ gap: 1rem; 
+}
+
+.TodoApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.TodoApp p{
+    font-size: 2rem;
+    padding: 2rem;
+    font-weight: bold;
+    background: linear-gradient(rgb(236, 190, 198),rgb(43, 2, 9));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.Form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.Form-input {
+    width: 90%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(82, 5, 18);
+}
+.Form-input::placeholder {
+    color: #ccc;
+}
+.Btn {
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(205, 168, 174);
+  border-radius: 5px;
+  transition: background-color .2s;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: rgb(82, 5, 18);
+  }
+
+.Alert {
+  margin: 0rem 1rem 1rem 1rem;
+}
+.Alert--error {
+    color:rgb(137, 5, 27);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+input[type='checkbox']:checked + label {
+  color:rgb(82, 5, 18) ;
+  text-decoration: line-through;
+}
+.ul_decorate{
+    width: 100%;
+    padding: 1rem;
+    background-color:rgb(171, 93, 104) ;
+    border-radius: 5px;
+}
+.li_decorate{
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:rgb(137, 5, 27) ;
+   
+}
+.Filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+

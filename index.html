@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prioritywise Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container TodoApp">
+        <p>Priority wise To-Do-List App</p>  
+      <div class="Section Filter">
+          <button class="Btn Btn--link js-filter-btn" data-filter="completed">show completed</button>
+          <button class="Btn Btn--link js-filter-btn" data-filter="active">show active</button>
+          <button class="Btn Btn--link js-filter-btn" data-filter="all">show all</button>
+      </div>
+        <div class="Section">
+          <form class="Form">
+            <input type="text" class="Form-input js-form-input" placeholder="Add your To-Do here..."/>
+            <button class="Btn js-btn-add">add</button>
+          </form>
+        </div>  
+      <div class="Section">
+        <div class="Alert js-alert"></div>
+        <ul class="TodoApp-list js-todos-list"></ul>  
+       </div>
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
