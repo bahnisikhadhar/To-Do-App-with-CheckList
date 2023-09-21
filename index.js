@@ -46,7 +46,7 @@ function appendFragmentToList(todo, fragment) {
 }
 
 function addTodo(event) {
-  event.preventDefault();
+  event.preventDefault(); //to stop from reloading
   if (!$formInput.value) {
     throw Error('Please add text in your task :)');
   }
@@ -74,10 +74,8 @@ function filterList(todos, fragment, filterCallback) {
 
 /* Event Listeners */
 $formAddButton.addEventListener('click', (e) => {
-  try {
-    console.time("js addTodo");
+  try {                //if try block has any error then only catch block will be executed
     addTodo(e);
-    console.timeEnd("js addTodo");
   } catch(error) {
     $formMessage.classList.add('Alert--error');
     $formMessage.innerHTML = error.message;
