@@ -22,7 +22,9 @@ function setTodoStatus(event) {
 
 function createListItemNode(todo) {
   const listItem = document.createElement('li');
+
 //   $todosList.classList.add("ul_decorate");
+
   listItem.classList.add("li_decorate");
   const checkbox = document.createElement('input');
   const label = document.createElement('label');
